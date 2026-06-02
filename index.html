@@ -1070,7 +1070,7 @@ async function saveDetail(){
     nom_prenom:document.getElementById('edit-nom').value,
     telephone:document.getElementById('edit-tel').value,
     destination:document.getElementById('edit-dest').value,
-    nb_personnes:parseInt(document.getElementById('edit-nb').value)||1,
+    nb_personnes:String(parseInt(document.getElementById('add-nb').value)||1),
     statut:document.getElementById('edit-statut').value,
     type_paiement:document.getElementById('edit-paiement').value,
     agent_responsable:document.getElementById('edit-agent').value,
